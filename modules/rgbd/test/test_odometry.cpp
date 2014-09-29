@@ -35,9 +35,17 @@
 
 #include "test_precomp.hpp"
 
+#if CV_VERSION_MAJOR == 3
 #include <opencv2/calib3d.hpp>
 #include <opencv2/highgui.hpp>
 #include <opencv2/imgproc.hpp>
+#else
+#include <opencv2/calib3d/calib3d.hpp>
+#include <opencv2/highgui/highgui.hpp>
+#include <opencv2/imgproc/imgproc.hpp>
+#endif
+
+
 
 namespace cv
 {

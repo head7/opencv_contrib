@@ -44,7 +44,13 @@
 #ifndef __OPENCV_OBJDETECT_LINEMOD_HPP__
 #define __OPENCV_OBJDETECT_LINEMOD_HPP__
 
+
+
+#if CV_VERSION_MAJOR == 3
 #include "opencv2/core.hpp"
+#else
+#include "opencv2/core/core.hpp"
+#endif
 #include <map>
 
 /****************************************************************************************\

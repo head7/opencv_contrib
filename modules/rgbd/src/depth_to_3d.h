@@ -38,7 +38,12 @@
 
 #ifdef __cplusplus
 
+#if CV_VERSION_MAJOR == 3
 #include <opencv2/core.hpp>
+
+#else
+#include <opencv2/core/core.hpp>
+#endif
 #include <limits.h>
 
 namespace cv

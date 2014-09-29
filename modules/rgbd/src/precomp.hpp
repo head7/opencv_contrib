@@ -44,10 +44,19 @@
 #define __OPENCV_PRECOMP_H__
 
 #include "opencv2/rgbd.hpp"
+#if CV_VERSION_MAJOR == 3
 #include "opencv2/calib3d.hpp"
 #include "opencv2/imgproc.hpp"
 #include "opencv2/core/utility.hpp"
 #include "opencv2/core/private.hpp"
+#else
+#include "opencv2/calib3d/calib3d.hpp"
+#include "opencv2/imgproc/imgproc.hpp"
+#include "opencv2/core/core.hpp"
+#include "opencv2/core/internal.hpp"
+//#include "opencv2/core/utility.hpp"
+//#include "opencv2/core/private.hpp"
+#endif
 #include <iostream>
 #include <list>
 #include <set>

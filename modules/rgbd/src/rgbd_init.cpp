@@ -33,10 +33,20 @@
  *
  */
 
+
+
+#if CV_VERSION_MAJOR == 3
 #include <opencv2/core.hpp>
 #include <opencv2/rgbd.hpp>
 #include "opencv2/core/utility.hpp"
 #include "opencv2/core/private.hpp"
+#else
+#include <opencv2/core/core.hpp>
+#include <opencv2/core/internal.hpp>
+#include "opencv2/rgbd.hpp"
+//#include "opencv2/core/utility.hpp"
+//#include "opencv2/core/private.hpp"
+#endif
 
 namespace cv
 {

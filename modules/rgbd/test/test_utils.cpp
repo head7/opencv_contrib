@@ -1,6 +1,10 @@
 #include "test_precomp.hpp"
 
+#if CV_VERSION_MAJOR == 3
 #include <opencv2/calib3d.hpp>
+#else
+#include <opencv2/calib3d/calib3d.hpp>
+#endif
 
 namespace cv
 {
